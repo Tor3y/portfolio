@@ -1,0 +1,8 @@
+<h1>Sign up for our site!</h1>
+
+<%= form_for @user do |f| %>
+	<%= f.text_field :email, placeholder: "your super secret email address..  we will be spamming.." %><br />
+	<%= f.password_field :password, placeholder: "password ..." %><br />
+	<%= f.password_field :password_confirmation, placeholder: "... and again" %>
+	<%= f.submit %>
+<% end %>
