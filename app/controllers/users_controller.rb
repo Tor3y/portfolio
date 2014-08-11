@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   end
 
   # Set
-    def new
+  def new
     @user = User.new
   end
   # Spike
@@ -13,14 +13,18 @@ class UsersController < ApplicationController
     user = User.new(params.require(:user).permit(:email, :password, :password_confirmation))
     if @user.save
       redirect_to users_path
+    else
+      redirect_to new_session_path
     end
   end
 
   def show
+    @user = User.new
   end
-
+  
   def edit
   end
+  
   def update
     @user = user.find(params[:user_id])
     if current_user != @user
