@@ -6,6 +6,6 @@ class User
   field :is_active, type: Mongoid::Boolean, default: true 
 
   has_secure_password
-
+  has_many :photos
 
 end
