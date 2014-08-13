@@ -27,6 +27,9 @@ gem 'spring',        group: :development
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+#Paperclick to help upload images to rails 
+gem 'paperclip'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 

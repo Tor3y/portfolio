@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
 
-  resource  :session, only: [:new, :create, :destroy]
+root to: 'sessions#new'
 
+  resource  :session, only: [:new, :create, :destroy]
+  get 'photo' => 'photo#show'
+  get 'photo/:id' => 'photo#show'
   get 'users' => 'users#index', as: :users
   get 'users/new' => 'users#new', as: :new_user
   post 'users' => 'users#create'

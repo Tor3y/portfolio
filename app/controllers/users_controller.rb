@@ -7,19 +7,20 @@ class UsersController < ApplicationController
   # Set
   def new
     @user = User.new
+    @is_login = true
   end
   # Spike
   def create
     user = User.new(params.require(:user).permit(:email, :password, :password_confirmation))
     if @user.save
-      redirect_to users_path
+      redirect_to photos_path
     else
       redirect_to new_session_path
     end
   end
 
   def show
-    @user = User.new
+    @user = user.find(params[:user_id])
   end
   
   def edit
