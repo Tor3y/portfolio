@@ -6,10 +6,11 @@ resources :photos
 resources :users
 
   resource  :session, only: [:new, :create, :destroy]
-  get 'photo' => 'photo#show'
-  get 'photo/:id' => 'photo#show'
-  get 'photos/' => 'photos#index'
-  #get 'users' => 'users#index', as: :users
+  # get 'photo' => 'photo#show'
+  # get 'photo/:id' => 'photo#show'
+  # get 'photos/' => 'photos#index'
+  # get 'photos/new' => 'photos#new'
+    #get 'users' => 'users#index', as: :users
   #get 'users/new' => 'users#new', as: :new_user
   #post 'users' => 'users#create'
   #get 'users/:id' => 'users#show', as: :user

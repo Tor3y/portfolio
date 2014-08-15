@@ -1,4 +1,15 @@
-code/ <%= form_for @photo do |f| %>
-<%= f.file_field :image %>
-<%= f.submit %>
-<% end %>
+<h1>NEW</h1>
+
+<h1> New Photos </h1>
+<div class="photos">
+  <%= form_for @photo , {url: photos_path(@photo)} do |f| %>
+  <%= f.file_field :image, class: "photo-upload" %>
+  <%#= f.text_field :tags, placeholder: "Add Photo Tags" %>
+  <%= f.submit "Submit", class: "btn btn-submit" %>
+  <% end %>
+</div>
+
+
+
+
+<a class="btn btn-submit" href="<%= photos_path %>"><span class="photos"></span> Back to photos/a>
