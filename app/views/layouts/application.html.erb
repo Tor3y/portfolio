@@ -6,7 +6,25 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
+<!-- <ul class="nav nav-pills">
+  <li class="active"><a href="<%= link_to "Log out", session_path, method: :delete %>">logout</a></li>
+
+</ul> -->
+
+<div style="float:right">
+<form align="right" name="form1" method="delete" action="new_sessions_path">
+  <label class="logoutLblPos">
+  <input name="submit2" type="submit" id="submit2" value="log out">
+  </label>
+</form>
+</div>
+
 <body>
+
+<%= render 'partials/nav' %>
+
+
 
 <%= yield %>
 

@@ -11,28 +11,29 @@ class PhotosController < ApplicationController
 
   def create
     # Find our parent decision that we should attach to
-    #@photo = current_user.photos.new(photo_params)
-    @photo = Photo.create(photo_params)
-    @photo.user = current_user
-    @photo.date ||= DateTime.now
+    # @user = User.where(:id => params[:user_id]).first
+    @photo = current_user.photos.new(photo_params)
+    # @photo = Photo.create(photo_params)
+    # @photo.user = current_user
+    # @photo.date ||= DateTime.now
     # @tags = tagger(tags)
     #@photo.tags = tagger(@photo.tags)
     # Attach this criterion to a decision
     if @photo.save
-      redirect_to photo_path(:user_id)
+      redirect_to photo_path(current_user)
     else
       render 'new'
     end
   end
 
   def show
-      @property = property
-      redirect_to photo_path
+      @photos = Photo.where(:user_id => current_user.id)
+      redirect_to photo_path(current_user)
   end
 
 
   private
   def photo_params
-    params.require(:photo).permit(:image, :user_id)
+    params.require(:photo).permit(:image)
   end
 end

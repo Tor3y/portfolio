@@ -1,7 +1,17 @@
 <h1>Sign up for our site!</h1>
 
+<% if @user.errors.any? %>
+
+	<% @user.errors.full_messages.each do |value| %>	
+		<div class="alert alert-danger" role="alert">
+			<%= value %>
+		</div>
+	<% end %>
+<% end %>	
+
+
 <%= form_for @user do |f| %>
-	<%= f.text_field :email, placeholder: "your super secret email address..  we will be spamming.." %><br />
+	<%= f.text_field :email, placeholder: "your email address..  we will be spamming.." %><br />
 	<%= f.password_field :password, placeholder: "password ..." %><br />
 	<%= f.password_field :password_confirmation, placeholder: "... and again" %>
 	<%= f.submit %>

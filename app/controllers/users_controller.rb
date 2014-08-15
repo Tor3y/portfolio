@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   
   def index
     @users = User.all
-    #@user = User.where(is_active: true)
+    @user = User.where(is_active: true)
   end
 
   # Set
@@ -15,7 +15,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params.require(:user).permit(:email, :password, :password_confirmation))
     if @user.save
-      session[:user_id] = @customer.id.to_s
+      #session[:user_id] = @user.id.to_s
       redirect_to photos_path
     else
       render 'new'
