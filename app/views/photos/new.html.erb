@@ -1,11 +1,14 @@
+<div class="container text-center">
 
+<div class="imageuploader">
 <%= form_for @photo do |f| %>
-	<%= f.file_field :image %>
-	<%= f.submit %>
+	<%= f.file_field :image, :class => "text-center" %><br />
+	<%= f.submit "upload image", :class => "btn btn-default btn-lg" %>
 <% end %>
+</div>
 
 
-
+</div>
 
 
 

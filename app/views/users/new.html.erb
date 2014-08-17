@@ -1,4 +1,6 @@
-<h1>Sign up for our site!</h1>
+
+<div class="container text-center">
+
 
 <% if @user.errors.any? %>
 
@@ -9,10 +11,34 @@
 	<% end %>
 <% end %>	
 
+<div class="myform">
+	<%= form_for @user do |f| %>
 
-<%= form_for @user do |f| %>
-	<%= f.text_field :email, placeholder: "your email address..  we will be spamming.." %><br />
-	<%= f.password_field :password, placeholder: "password ..." %><br />
-	<%= f.password_field :password_confirmation, placeholder: "... and again" %>
-	<%= f.submit %>
-<% end %>
+		<form class="form-signin" role="form">
+
+	        <h2 class="form-signin-heading">Create a new user</h2>
+	        <br />
+	        <%= f.text_field :email, :class => "form-control", placeholder: "your email address..  we will be spamming.." %>
+	        <br />
+	        <%= f.password_field :password, :class => "form-control", placeholder: "password" %>
+	        	<br />
+
+	      	<%= f.password_field :password, :class => "form-control", placeholder: "password ..." %>
+	      	<br />
+		
+			<%= f.password_field :password_confirmation, :class => "form-control", placeholder: "... and again" %>
+			
+			<br />
+			<%= f.submit :class => "btn black btn-lg btn-primary btn-block" %>
+
+			</form>
+
+	<% end %>
+
+</div>
+
+
+	
+	
+
+</div>

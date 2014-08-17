@@ -15,3 +15,62 @@
  */
 
 @import 'bootstrap';
+
+.navbar-brand {
+	margin-top: .7em;
+	font-size: 2em;
+	margin-left: .1em !important;
+}
+
+.navLinks {
+	margin-top: .9em;
+	font-size: 1.6em;
+}
+
+.imageuploader {
+	width: 175px;
+	margin: 3em auto;
+}
+
+.myImages {
+	list-style: none !important;
+	width: 200px;
+	height: auto;
+}
+
+input.checkme {
+	font-size: 3em;
+	width: 30px;
+	height: 30px;
+}
+
+.myblue {
+	background-color: black;
+	color: white;
+	border: none;
+	width: 120px;
+}
+
+.myblue:hover {
+	background-color: white;
+	color: black;
+	border: 1px solid #cfcfcf;
+}
+
+.marginme {
+	width: 300px;
+	padding-top: 5em;
+	margin: 0 auto;
+}
+
+.myform {
+	width: 400px;
+	margin: 3em auto;
+}
+
+.black {
+	background-color: black;
+	border: none;
+}
+
+	

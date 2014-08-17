@@ -1,14 +1,74 @@
+<div class="container">
 <h1>Index of all Users</h1>
+<br />
 
-
-	<ul> User Emails:
+<% if current_user != nil %>
+	<ul> <!-- User Emails: -->
 	<% @users.each do |u| %>
-		<li>
-		  <%= u.email %> 
-		</li>
-	<% end %>
-	</ul>
-	
 
+			<% u.email %> 
+		 	<% u.photos.each do |p| %>
+                
+                  <ul class="row myImages">
+                    <li class="col-sm-6 myImage">
+                    <%#= collection_select(:user, Photo.all {:prompt => 'Select'}) %>
+                       <%= image_tag p.image.url %>
+                       <br />           
+                    </li>
+                  </ul>
+            <% end %>
+
+	</ul>
+
+	<% end %>
+<% end %>
+
+</div>
+
+<script>
+
+  $(window).load(function()) {
+    $('.imageGrid').masonry({
+      columnWidth: 30,
+      itemSelector: '.thumb'
+    });
+  });
+
+</script>
+
+<!-- <div class="container">
+   <ul class="row">
+       <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img src="Brick Lane-1-6.jpg" alt="image"/>
+       </li>
+       <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img src="flower.jpg" alt="image"/>
+        </li>
+       <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+         <img src="IMG_0202.jpg" alt="image"/>
+       </li>
+       <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+         <img src="IMG_0830.jpg" alt="image"/>
+       </li>
+       <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+         <img src="IMG_6851.jpg" alt="image"/>
+       </li>
+       <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+           <img src="IMG_6870.jpg" alt="image"/>
+        </li>
+       <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img src="IMG_9646.jpg" alt="image" />
+        </li>
+       <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+          <img src="IMG_9825.jpg" alt="image"/>
+        </li>
+       <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+         <img src="napleon16x20.jpg" alt="image"/>
+        </li>
+       <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+         <img src="/TOR_7883.jpg" alt="image"/>
+        </li>
+   </ul>
+</div> -->
 
 

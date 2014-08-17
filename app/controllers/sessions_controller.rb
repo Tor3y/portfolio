@@ -15,7 +15,7 @@ class SessionsController < ApplicationController
 			# Store as a cookie in the users' browser the ID of them,
 			# indicating that they are logged in
 			session[:user_id] = u.id.to_s
-			redirect_to users_path
+			redirect_to photos_path
 		elsif u == nil
 			flash[:error] = "Invalid Email"
 			redirect_to new_session_path 

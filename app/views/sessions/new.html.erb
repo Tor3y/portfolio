@@ -1,11 +1,23 @@
-<h1>user login</h1>
-<p>This is a new session page</p>
+<div class="container text-center">
+
+<div class="marginme">
 
 
 <%= form_for @user, {url: session_path} do |f| %>
-	<%= f.text_field :email, placeholder: "Email" %><br />
-	<%= f.password_field :password, placeholder: "password" %><br />
-	<%= f.submit "login" %>
+
+
+<form class="form-signin" role="form">
+        <h2 class="form-signin-heading">Please sign in</h2><br />
+        <%= f.text_field :email, :class => "form-control", placeholder: "Email" %><br />
+        <%= f.password_field :password, :class => "form-control", placeholder: "password" %>
+        	<br />
+
+        <%= f.submit "login", :class => "btn btn-lg btn-primary btn-block" %>
+
+      </form>
+
+	
+	
 
 		</br>
 <div class="col-md-4">
@@ -17,3 +29,7 @@
 </div>
 <%end%>
 
+
+</div>
+
+</div>

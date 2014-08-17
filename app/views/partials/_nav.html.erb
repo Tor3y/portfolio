@@ -4,8 +4,30 @@
     <div class="navbar-header">
       <a class="navbar-brand" href="#">Brand</a>
     </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">log out</a></li>
+
+         <% if is_admin %>  
+          <li class="navLinks">
+          <%= link_to "Add user", new_user_path %>
+          </li>
+          <li class="navLinks">
+          <%= link_to "Add photo", new_photo_path %>
+          </li>
+        <% else %>
+          <li>
+          </li>  
+           <% end %>
+
+        <% if current_user %>  
+          <li class="navLinks"><%= link_to "Log out", session_path, method: :delete %></li>
+        <% else %>
+          <li class="navLinks">
+            <%= link_to "Log in", new_session_path, method: :get %>
+          </li>
+        <% end %>
       </ul>
-  </div><!-- /.navbar-collapse -->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
 </nav>

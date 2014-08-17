@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   def index
     @users = User.all
     @user = User.where(is_active: true)
+    @photos = Photo.all
   end
 
   # Set
@@ -23,14 +24,16 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(params[:user_id])
+
+    @user = User.find(params[:id])
+
   end
   
   def edit
   end
   
   def update
-    @user = User.find(params[:user_id])
+    @user = User.find(params[:id])
     if current_user != @user
       if current_user
         redirect_to user_paths(current_user)
@@ -57,7 +60,8 @@ end
     @user = user.find(params[:id])
     @user.is_active = true
   end
- 
+  
+
  private
 
  def check_admin
@@ -66,6 +70,10 @@ end
   end 
  end
 
+  # def photo_params
+  #   params.require(:photo).permit(
+  #   )
+  # end
 end
 
 

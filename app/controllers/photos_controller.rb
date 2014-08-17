@@ -20,15 +20,16 @@ class PhotosController < ApplicationController
     #@photo.tags = tagger(@photo.tags)
     # Attach this criterion to a decision
     if @photo.save
-      redirect_to photo_path(current_user)
+      redirect_to users_path
+      # user_path(current_user)
     else
       render 'new'
     end
   end
 
   def show
-      @photos = Photo.where(:user_id => current_user.id)
-      redirect_to photo_path(current_user)
+      # @photos = Photo.where(:user_id => current_user.id)
+      # redirect_to photo_path(current_user)
   end
 
 

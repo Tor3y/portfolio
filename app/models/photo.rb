@@ -2,7 +2,7 @@
     include Mongoid::Document
     include Mongoid::Paperclip
     field :album, type: String
-    #field :date, type: DateTime
+    field :date, type: DateTime
 
     belongs_to :user
 

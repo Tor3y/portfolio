@@ -1,5 +1,22 @@
-<h1>photo#indexnknk</h1>
+<div class="container text-center">
+
+<h1>photos</h1>
 <% @photos.each do |photo| %>
+<input class="checkme" type="checkbox" value="option">
 <%= image_tag photo.image.url %>
+
+
 <% end %>
+
+<br /><br />
+
+<button class="myblue btn btn-default btn-lg dropdown-toggle" type="button" >
+    Submit
+  </button>
+
+<br /><br />
+
+
+</div>
+
 

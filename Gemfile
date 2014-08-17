@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
-
+group :test, :development do 
+	gem 'pry-rails'
+end
+	
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
 # Use SCSS for stylesheets
@@ -31,7 +34,7 @@ gem 'bcrypt', '~> 3.1.7'
 
 #Paperclick to help upload images to rails 
 #gem 'paperclip'
-
+gem 'masonry-rails', '~> 0.2.1'
 # Use unicorn as the app server
 # gem 'unicorn'
 
