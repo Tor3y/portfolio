@@ -16,15 +16,25 @@
 
 @import 'bootstrap';
 
+
+
+.navbar {
+	height: 5px;
+}
+
 .navbar-brand {
-	margin-top: .7em;
+	/*margin-top: .7em;*/
 	font-size: 2em;
 	margin-left: .1em !important;
 }
 
 .navLinks {
-	margin-top: .9em;
-	font-size: 1.6em;
+	/*margin-top: .9em;*/
+	font-size: 1em;
+	border: none;
+	border-radius: 3px
+
+
 }
 
 .imageuploader {
@@ -49,6 +59,11 @@ input.checkme {
 	color: white;
 	border: none;
 	width: 120px;
+}
+.btn-primary {
+	background-color: white;
+	color: white;
+	border: 1px solid #000;
 }
 
 .myblue:hover {

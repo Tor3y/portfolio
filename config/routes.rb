@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
-root to: 'sessions#new'
+  #get 'welcome#index'
+
+root to: 'welcome#index'
 resources :photos
 resources :users
 
