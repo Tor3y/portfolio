@@ -1,13 +1,96 @@
 
-	
-<div class="container">
-	<div class="logo">
-		<img alt="Logo s" src="/system/photos/images/5420/ad2f/544f/5204/0301/0000/original/logo_s.jpg?1411427631">
+<div id="blueimp-gallery" class="blueimp-gallery">
+  <div class="slides"></div>
+  <h3 class="title"></h3>
+  <a class="prev">‹</a>
+  <a class="next">›</a>
+  <a class="close">×</a>
+  <a class="play-pause"></a>
+  <ol class="indicator"></ol>
+</div>	
+
+	<div class="sectionOne text-center"> 
+
+		<div class="logo">
+			<img alt="Logo s" src="/system/photos/images/5420/ad2f/544f/5204/0301/0000/original/logo_s.jpg?1411427631">
+		</div>
+		<div class="textlogo">
+			<img alt="Text logo rast s" src="/system/photos/images/5420/b3e8/544f/5204/0302/0000/original/text_logo_rast_s.jpg?1411429352"> 
+		</div>
+
 	</div>
-	<div class="textlogo">
-		<img alt="Text logo rast s" src="/system/photos/images/5420/b3e8/544f/5204/0302/0000/original/text_logo_rast_s.jpg?1411429352"> 
+
+	<div class="sectionTwo"> 
+
+	<div class="testblock">
+	&nbsp;
 	</div>
-</div>
+
+	</div>
+
+	<div class="sectionThree"> 
+
+	<h2>Clients:</h2>
+
+	<div class="row myrow">
+      <a class="galimg" href="http://localhost:3000/system/photos/images/5423/0c4c/544f/5202/6f02/0000/original/mark2.jpg?1411583052" id="galimg" title="Photo 1" data-gallery>
+        <img src="http://localhost:3000/system/photos/images/5423/1723/544f/5202/6f05/0000/original/mark2_s.jpg?1411585827" class="thumb" alt="Photo 1">
+      </a>
+      <a class="galimg" href="http://localhost:3000/system/photos/images/5423/0c4c/544f/5202/6f02/0000/original/mark2.jpg?1411583052" id="galimg" title="Photo 1" data-gallery>
+      <img src="http://localhost:3000/system/photos/images/5423/1723/544f/5202/6f05/0000/original/mark2_s.jpg?1411585827" class="thumb" alt="Photo 1">
+    </a>
+      <a class="galimg" href="http://localhost:3000/system/photos/images/5423/0c4c/544f/5202/6f02/0000/original/mark2.jpg?1411583052" id="galimg" title="Photo 1" data-gallery>
+      <img src="http://localhost:3000/system/photos/images/5423/1723/544f/5202/6f05/0000/original/mark2_s.jpg?1411585827" class="thumb" alt="Photo 1">
+    </a>
+      <a class="galimg" href="http://localhost:3000/system/photos/images/5423/0c4c/544f/5202/6f02/0000/original/mark2.jpg?1411583052" id="galimg" title="Photo 1" data-gallery>
+      <img src="http://localhost:3000/system/photos/images/5423/1723/544f/5202/6f05/0000/original/mark2_s.jpg?1411585827" class="thumb" alt="Photo 1">
+    </a>
+    <a class="galimg" href="http://localhost:3000/system/photos/images/5423/0c4c/544f/5202/6f02/0000/original/mark2.jpg?1411583052" id="galimg" title="Photo 1" data-gallery>
+      <img src="http://localhost:3000/system/photos/images/5423/1723/544f/5202/6f05/0000/original/mark2_s.jpg?1411585827" class="thumb" alt="Photo 1">
+    </a>
+    <a class="galimg" href="http://localhost:3000/system/photos/images/5423/0c4c/544f/5202/6f02/0000/original/mark2.jpg?1411583052" id="galimg" title="Photo 1" data-gallery>
+      <img src="http://localhost:3000/system/photos/images/5423/1723/544f/5202/6f05/0000/original/mark2_s.jpg?1411585827" class="thumb" alt="Photo 1">
+    </a>
+  </div>
+
+  <div class="footer">
+  <div class="text-center footcent">
+  	&copy; TOR3Y 2014
+  </div>
+  <div class="pull-right footright">
+  	Terms of Agreement
+  </div>
+ 
+  </div>
+
+
+
+	</div>
+
+
+
+
+<script type="text/javascript">
+document.addEventListener(function() {
+  $('#links').masonry({
+    columnWidth: 20,
+    itemSelector: '.thumb'
+  });
+});
+
+
+$('#links').onClick = function (event) {
+  event = event || window.event;
+   var target = event.target || event.srcElement,
+     link = target.src ? target.parentNode : target,
+    options = {index: link, event: event},
+    links = this.getElementsByTagName('a');
+  blueimp.Gallery(links, options);
+};
+</script>
+
+
+       
 
 
 

@@ -21,8 +21,30 @@
 	height: 5px;
 }
 
+.sectionOne {
+	margin-bottom: 13em;
+}
+
+.sectionTwo {
+	background: url(bmw.jpg);
+	background-size: cover;
+	background-position: top;
+	width: 100%;
+	height: 800px;
+}
+
+.sectionThree{
+	font-family: helvetica;
+	font-weight: 100;
+}
+
+.testblock {
+	width: 100%;
+	height: 300px;
+}
+
 .galimg {
-	padding: .1em;
+	padding: .09em;
 }
 
 .navbar-brand {
@@ -84,6 +106,15 @@ input.checkme {
 	margin: 0 auto;
 }
 
+.footright {
+	padding-right: 2em;
+	margin-top: -1.6em;
+}
+
+.footcent {
+	padding-top: 1.4em;
+}
+
 .myform {
 	width: 400px;
 	margin: 3em auto;
@@ -94,4 +125,18 @@ input.checkme {
 	border: none;
 }
 
+.navbar {
+	z-index: 100000000000000000000000000000;
+	border-radius: none;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+.footer {
+	width:100%;
+	height:80px;
+	background-color: black;
+	color: white;
+	font-size: 1.4em;
+}
 	
