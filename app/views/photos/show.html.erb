@@ -1,3 +1,112 @@
-<%= form_for @user, :html => {:multipart => true} do |f| %>
-<%= f.file_field :image %>
-<% end %>
+
+
+ 
+<div class="text-center">
+
+<!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+  <div class="slides"></div>
+  <h3 class="title"></h3>
+  <a class="prev">‹</a>
+  <a class="next">›</a>
+  <a class="close">×</a>
+  <a class="play-pause"></a>
+  <ol class="indicator"></ol>
+</div>
+
+<div id="links">
+
+    <div class="row myrow">
+      <a class="galimg" href="http://localhost:3000/system/photos/images/5423/0c4c/544f/5202/6f02/0000/original/mark2.jpg?1411583052" id="galimg" title="Photo 1" data-gallery>
+        <img src="http://localhost:3000/system/photos/images/5423/1723/544f/5202/6f05/0000/original/mark2_s.jpg?1411585827" class="thumb" alt="Photo 1">
+      </a>
+      <a class="galimg" href="http://localhost:3000/system/photos/images/5423/0c4c/544f/5202/6f02/0000/original/mark2.jpg?1411583052" id="galimg" title="Photo 1" data-gallery>
+      <img src="http://localhost:3000/system/photos/images/5423/1723/544f/5202/6f05/0000/original/mark2_s.jpg?1411585827" class="thumb" alt="Photo 1">
+    </a>
+      <a class="galimg" href="http://localhost:3000/system/photos/images/5423/0c4c/544f/5202/6f02/0000/original/mark2.jpg?1411583052" id="galimg" title="Photo 1" data-gallery>
+      <img src="http://localhost:3000/system/photos/images/5423/1723/544f/5202/6f05/0000/original/mark2_s.jpg?1411585827" class="thumb" alt="Photo 1">
+    </a>
+      <a class="galimg" href="http://localhost:3000/system/photos/images/5423/0c4c/544f/5202/6f02/0000/original/mark2.jpg?1411583052" id="galimg" title="Photo 1" data-gallery>
+      <img src="http://localhost:3000/system/photos/images/5423/1723/544f/5202/6f05/0000/original/mark2_s.jpg?1411585827" class="thumb" alt="Photo 1">
+    </a>
+  </div>
+      <div class="row myrow">
+      <a class="galimg" href="http://localhost:3000/system/photos/images/5423/0c4c/544f/5202/6f02/0000/original/mark2.jpg?1411583052" id="galimg" title="Photo 1" data-gallery>
+        <img src="http://localhost:3000/system/photos/images/5423/1723/544f/5202/6f05/0000/original/mark2_s.jpg?1411585827" class="thumb" alt="Photo 1">
+      </a>
+      <a class="galimg" href="http://localhost:3000/system/photos/images/5423/0c4c/544f/5202/6f02/0000/original/mark2.jpg?1411583052" id="galimg" title="Photo 1" data-gallery>
+      <img src="http://localhost:3000/system/photos/images/5423/1723/544f/5202/6f05/0000/original/mark2_s.jpg?1411585827" class="thumb" alt="Photo 1">
+    </a>
+      <a class="galimg" href="http://localhost:3000/system/photos/images/5423/0c4c/544f/5202/6f02/0000/original/mark2.jpg?1411583052" id="galimg" title="Photo 1" data-gallery>
+      <img src="http://localhost:3000/system/photos/images/5423/1723/544f/5202/6f05/0000/original/mark2_s.jpg?1411585827" class="thumb" alt="Photo 1">
+    </a>
+      <a class="galimg" href="http://localhost:3000/system/photos/images/5423/0c4c/544f/5202/6f02/0000/original/mark2.jpg?1411583052" id="galimg" title="Photo 1" data-gallery>
+      <img src="http://localhost:3000/system/photos/images/5423/1723/544f/5202/6f05/0000/original/mark2_s.jpg?1411585827" class="thumb" alt="Photo 1">
+    </a>
+  </div>
+      <div class="row myrow">
+      <a class="galimg" href="http://localhost:3000/system/photos/images/5423/0c4c/544f/5202/6f02/0000/original/mark2.jpg?1411583052" id="galimg" title="Photo 1" data-gallery>
+        <img src="http://localhost:3000/system/photos/images/5423/1723/544f/5202/6f05/0000/original/mark2_s.jpg?1411585827" class="thumb" alt="Photo 1">
+      </a>
+      <a class="galimg" href="http://localhost:3000/system/photos/images/5423/0c4c/544f/5202/6f02/0000/original/mark2.jpg?1411583052" id="galimg" title="Photo 1" data-gallery>
+      <img src="http://localhost:3000/system/photos/images/5423/1723/544f/5202/6f05/0000/original/mark2_s.jpg?1411585827" class="thumb" alt="Photo 1">
+    </a>
+      <a class="galimg" href="http://localhost:3000/system/photos/images/5423/0c4c/544f/5202/6f02/0000/original/mark2.jpg?1411583052" id="galimg" title="Photo 1" data-gallery>
+      <img src="http://localhost:3000/system/photos/images/5423/1723/544f/5202/6f05/0000/original/mark2_s.jpg?1411585827" class="thumb" alt="Photo 1">
+    </a>
+      <a class="galimg" href="http://localhost:3000/system/photos/images/5423/0c4c/544f/5202/6f02/0000/original/mark2.jpg?1411583052" id="galimg" title="Photo 1" data-gallery>
+      <img src="http://localhost:3000/system/photos/images/5423/1723/544f/5202/6f05/0000/original/mark2_s.jpg?1411585827" class="thumb" alt="Photo 1">
+    </a>
+  </div>
+      <div class="row myrow">
+      <a class="galimg" href="http://localhost:3000/system/photos/images/5423/0c4c/544f/5202/6f02/0000/original/mark2.jpg?1411583052" id="galimg" title="Photo 1" data-gallery>
+        <img src="http://localhost:3000/system/photos/images/5423/1723/544f/5202/6f05/0000/original/mark2_s.jpg?1411585827" class="thumb" alt="Photo 1">
+      </a>
+      <a class="galimg" href="http://localhost:3000/system/photos/images/5423/0c4c/544f/5202/6f02/0000/original/mark2.jpg?1411583052" id="galimg" title="Photo 1" data-gallery>
+      <img src="http://localhost:3000/system/photos/images/5423/1723/544f/5202/6f05/0000/original/mark2_s.jpg?1411585827" class="thumb" alt="Photo 1">
+    </a>
+      <a class="galimg" href="http://localhost:3000/system/photos/images/5423/0c4c/544f/5202/6f02/0000/original/mark2.jpg?1411583052" id="galimg" title="Photo 1" data-gallery>
+      <img src="http://localhost:3000/system/photos/images/5423/1723/544f/5202/6f05/0000/original/mark2_s.jpg?1411585827" class="thumb" alt="Photo 1">
+    </a>
+      <a class="galimg" href="http://localhost:3000/system/photos/images/5423/0c4c/544f/5202/6f02/0000/original/mark2.jpg?1411583052" id="galimg" title="Photo 1" data-gallery>
+      <img src="http://localhost:3000/system/photos/images/5423/1723/544f/5202/6f05/0000/original/mark2_s.jpg?1411585827" class="thumb" alt="Photo 1">
+    </a>
+  </div>
+
+
+</div>
+
+
+
+
+<!-- <input class="checkme" type="checkbox" value="option"> -->
+
+
+</div>
+<br /><br />
+
+<!-- <button class="myblue btn btn-default btn-lg dropdown-toggle" type="button" >
+    Submit
+  </button>
+
+<br /><br />
+
+ -->
+ <script type="text/javascript">
+document.addEventListener(function() {
+  $('#links').masonry({
+    columnWidth: 20,
+    itemSelector: '.thumb'
+  });
+});
+
+
+$('#links').onClick = function (event) {
+  event = event || window.event;
+   var target = event.target || event.srcElement,
+     link = target.src ? target.parentNode : target,
+    options = {index: link, event: event},
+    links = this.getElementsByTagName('a');
+  blueimp.Gallery(links, options);
+};
+</script>

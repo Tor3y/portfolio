@@ -11,14 +11,8 @@
 // about supported directives.
 
 //= require jquery
+//= require blueimp-gallery-all
 //= require bootstrap
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-
-$(window).load(function()) {
-	$('myImages').masonry({
-		columnWidth: 20,
-		itemSelector: '.thumb'
-	});
-});

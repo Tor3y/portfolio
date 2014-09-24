@@ -2,7 +2,9 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">TOR3Y</a>
+      <div class="navbar-brand"> 
+      <%= link_to "TOR3Y", root_path %>
+      </div>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -18,13 +20,22 @@
            <% end %>
 
         <% if current_user %>  
+          <li class="navLinks">
+            <%= link_to "Works", photos_path %>
+          </li>
+          <li class="navLinks">
+            <%= link_to "Backstage", photo_path(current_user) %>
+          </li>
+          <li class="navLinks">
+            <%= link_to "contact", new_user_path %>
+          </li>
           <li class="navLinks"><%= link_to "Log out", session_path, method: :delete %></li>
         <% else %>
           <li class="navLinks">
-            <%= link_to "Works", new_user_path %>
+            <%= link_to "Works", photos_path %>
           </li>
           <li class="navLinks">
-            <%= link_to "Add user", new_user_path %>
+            <%= link_to "Contact", new_user_path %>
           </li>
             <li class="navLinks">
             <%= link_to "Log in", new_session_path, method: :get %>

@@ -12,14 +12,17 @@
  *
  *= require_tree .
  *= require_self
+ *= require blueimp-gallery-all
  */
 
 @import 'bootstrap';
 
-
-
 .navbar {
 	height: 5px;
+}
+
+.galimg {
+	padding: .1em;
 }
 
 .navbar-brand {
@@ -34,7 +37,10 @@
 	border: none;
 	border-radius: 3px
 
+}
 
+.myrow {
+	margin-bottom: .5em;
 }
 
 .imageuploader {

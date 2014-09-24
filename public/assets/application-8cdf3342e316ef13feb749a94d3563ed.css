@@ -1,0 +1,506 @@
+/* line 6, /Users/TOR3Y/Documents/WDI/project2/Project2/app/assets/stylesheets/photos.css.scss */
+ul {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+/* line 10, /Users/TOR3Y/Documents/WDI/project2/Project2/app/assets/stylesheets/photos.css.scss */
+ul li {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+/* line 14, /Users/TOR3Y/Documents/WDI/project2/Project2/app/assets/stylesheets/photos.css.scss */
+ul li img {
+  cursor: pointer;
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{background:#fff;color:#000;font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:0.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type='button'],input[type='reset'],input[type='submit']{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type='checkbox'],input[type='radio']{box-sizing:border-box;padding:0}input[type='search']{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type='search']::-webkit-search-cancel-button,input[type='search']::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}html{font:100%/1.5 "Karla","lucida grande",sans-serif,sans-serif;font-weight:400}@media (min-width: 40rem){html{font-size:106%}}@media (min-width: 64rem){html{font-size:112%}}body{color:#777;background-color:#fff}h1,h2,h3,h4,h5{color:#222;line-height:1.2em;font-family:"Montserrat","Helvetica",sans-serif;font-weight:600}h1{font-size:3.5rem;margin:0 0 0.2em 0}@media (min-width: 40rem){h1{font-size:4.5rem}}@media (min-width: 64rem){h1{font-size:5rem}}h2{color:#e67e39;margin-bottom:1.5rem;font-size:1.5rem;text-transform:uppercase}@media (min-width: 40rem){h2{font-size:2rem}}h3{font-size:1.2rem;margin-bottom:0.5rem}blockquote{margin:0}blockquote p{color:#bbb;font-style:italic;margin-bottom:1.5rem}cite{color:#bbb}p{margin:0 auto 2em auto;text-align:left}.lead{max-width:45rem;font-size:1.25rem}ol{list-style-type:decimal}ul,ol{margin:0 0 1.25em 0}li{margin-bottom:2em}li.last-list-item{border-bottom:none}dt{font-weight:bold}dd{margin-bottom:1.625em}strong{font-weight:bold}i{font-style:italic}em{font-style:normal}a{color:#4ae;text-decoration:none}a:hover{text-decoration:underline}::-moz-selection,::selection{background:#e67e39;color:#fff}.sub-point{display:block;font-size:0.75rem}*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}body{margin:0;padding:0;background:#fff}section{border-top:2px solid #f2f2f2;text-align:center;padding:2rem 0}section:first-of-type{border-top:none}@media (min-width: 40rem){section{padding:4rem 0}}.container{margin:0 auto;max-width:40rem;width:90%}.row{*zoom:1}.row:after{content:"";display:table;clear:both}header{padding:2rem 0;background-color:#f7f7f7;text-align:center}header p{text-align:center}.example-image-link{display:inline-block;padding:4px;margin:0 0.5rem 1rem 0.5rem;background-color:#fff;line-height:0;-webkit-transition:background-color 0.1s ease-out;-moz-transition:background-color 0.1s ease-out;-o-transition:background-color 0.1s ease-out;transition:background-color 0.1s ease-out;-webkit-border-radius:6px;-moz-border-radius:6px;-ms-border-radius:6px;-o-border-radius:6px;border-radius:6px}.example-image-link:hover{background-color:#4ae}.example-image{width:7rem;-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;-o-border-radius:5px;border-radius:5px}.how-to-use-section p,.how-to-use-section ol,.how-to-use-section ul,.how-to-use-section pre{text-align:left}fieldset{border:none}.donate-button{width:100%}@media (min-width: 40rem){.donate-button{width:auto}}footer{padding:2rem 0;background-color:#f7f7f7;text-align:center}footer p{text-align:center}footer .button{margin-top:0.5rem}.sharing-section{position:fixed;z-index:10;top:20px;right:0}code{color:#777;background-color:#f2f2f2;-webkit-border-radius:6px;-moz-border-radius:6px;-ms-border-radius:6px;-o-border-radius:6px;border-radius:6px;font-family:Consolas,Courier,monospace;font-size:0.9rem;padding:0.1rem 0.3rem;position:relative;top:-1px}pre{background-color:#f2f2f2;-webkit-border-radius:6px;-moz-border-radius:6px;-ms-border-radius:6px;-o-border-radius:6px;border-radius:6px;padding:0 0.5rem 0.1rem 0.5rem}pre code{padding:0;font-size:0.7rem;border:none}.column{margin-bottom:1.5rem}@media (min-width: 40rem){.column{float:left;margin:0;padding-left:1rem;padding-right:1rem}.column.full{width:100%}.column.two-thirds{width:66.7%}.column.half{width:50%}.column.third{width:33.3%}.column.fourth{width:24.95%}.column.flow-opposite{float:right}}ul{margin:0;text-align:left}@media (min-width: 40rem){ul{display:inline-block}}.button{display:block;padding:0.7rem 2rem;margin-bottom:0.5rem;border:none;color:#fff;background-color:#4ae;font-size:1.2rem;font-weight:bold;text-transform:uppercase;-webkit-border-radius:6px;-moz-border-radius:6px;-ms-border-radius:6px;-o-border-radius:6px;border-radius:6px;vertical-align:middle;white-space:nowrap}.button:hover{background:#1595ea;text-decoration:none}@media (min-width: 40rem){.button{display:inline-block;margin:0 0.25rem}}.button-minor{padding:0.35rem 1rem;border:2px solid #4ae;color:#4ae;background-color:transparent;font-size:0.8rem}.button-minor:hover{color:#fff}hr{border:0;border-top:2px solid #f2f2f2;margin:2rem auto;width:3rem}@media (min-width: 40rem){hr{margin:2.5rem auto}}
+/* line 6, /Users/TOR3Y/Documents/WDI/project2/Project2/app/assets/stylesheets/users.css.scss */
+ul {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+/* line 10, /Users/TOR3Y/Documents/WDI/project2/Project2/app/assets/stylesheets/users.css.scss */
+ul li {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+/* line 14, /Users/TOR3Y/Documents/WDI/project2/Project2/app/assets/stylesheets/users.css.scss */
+ul li img {
+  cursor: pointer;
+}
+/* line 5, /Users/TOR3Y/Desktop/Project2_backup/app/assets/stylesheets/welcome.css.scss */
+.container {
+  max-width: 700px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 16, /Users/TOR3Y/Desktop/Project2_backup/app/assets/stylesheets/welcome.css.scss */
+.logo {
+  margin-top: 90px;
+  margin-left: 190px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+ */
+
+
+@import 'bootstrap';
+
+.navbar {
+	height: 5px;
+}
+
+.navbar-brand {
+	/*margin-top: .7em;*/
+	font-size: 2em;
+	margin-left: .1em !important;
+}
+
+.navLinks {
+	/*margin-top: .9em;*/
+	font-size: 1em;
+	border: none;
+	border-radius: 3px
+
+
+}
+
+.imageuploader {
+	width: 175px;
+	margin: 3em auto;
+}
+
+.myImages {
+	list-style: none !important;
+	width: 200px;
+	height: auto;
+}
+
+input.checkme {
+	font-size: 3em;
+	width: 30px;
+	height: 30px;
+}
+
+.myblue {
+	background-color: black;
+	color: white;
+	border: none;
+	width: 120px;
+}
+.btn-primary {
+	background-color: white;
+	color: white;
+	border: 1px solid #000;
+}
+
+.myblue:hover {
+	background-color: white;
+	color: black;
+	border: 1px solid #cfcfcf;
+}
+
+.marginme {
+	width: 300px;
+	padding-top: 5em;
+	margin: 0 auto;
+}
+
+.myform {
+	width: 400px;
+	margin: 3em auto;
+}
+
+.black {
+	background-color: black;
+	border: none;
+}
+
+	
+@charset 'UTF-8';
+/*
+ * blueimp Gallery CSS 2.10.0
+ * https://github.com/blueimp/Gallery
+ *
+ * Copyright 2013, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+
+.blueimp-gallery,
+.blueimp-gallery > .slides > .slide > .slide-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* Prevent artifacts in Mozilla Firefox: */
+  -moz-backface-visibility: hidden;
+}
+.blueimp-gallery > .slides > .slide > .slide-content {
+  margin: auto;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 1;
+}
+.blueimp-gallery {
+  position: fixed;
+  z-index: 9999;
+  overflow: hidden;
+  background: #000;
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  display: none;
+  direction: ltr;
+  -ms-touch-action: none;
+}
+.blueimp-gallery-carousel {
+  position: relative;
+  z-index: auto;
+  margin: 1em auto;
+  /* Set the carousel width/height ratio to 16/9: */
+  padding-bottom: 56.25%;
+  box-shadow: 0 0 10px #000;
+}
+.blueimp-gallery-display {
+  display: block;
+  opacity: 1;
+}
+.blueimp-gallery > .slides {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.blueimp-gallery-carousel > .slides {
+  position: absolute;
+}
+.blueimp-gallery > .slides > .slide {
+  position: relative;
+  float: left;
+  height: 100%;
+  text-align: center;
+  -webkit-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+     -moz-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+      -ms-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+       -o-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+          transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+.blueimp-gallery,
+.blueimp-gallery > .slides > .slide > .slide-content {
+  -webkit-transition: opacity 0.5s linear;
+     -moz-transition: opacity 0.5s linear;
+      -ms-transition: opacity 0.5s linear;
+       -o-transition: opacity 0.5s linear;
+          transition: opacity 0.5s linear;
+}
+.blueimp-gallery > .slides > .slide-loading {
+  background: url("loading.gif") center no-repeat;
+  background-size: 64px 64px;
+}
+.blueimp-gallery > .slides > .slide-loading > .slide-content {
+  opacity: 0;
+}
+.blueimp-gallery > .slides > .slide-error {
+  background: url("error.png") center no-repeat;
+}
+.blueimp-gallery > .slides > .slide-error > .slide-content {
+  display: none;
+}
+.blueimp-gallery > .prev,
+.blueimp-gallery > .next {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  margin-top: -23px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 30px;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 2px #000;
+  text-align: center;
+  background: #222;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+  border: 3px solid #fff;
+  -webkit-border-radius: 23px;
+     -moz-border-radius: 23px;
+          border-radius: 23px;
+  opacity: 0.5;
+  cursor: pointer;
+  display: none;
+}
+.blueimp-gallery > .next {
+  left: auto;
+  right: 15px;
+}
+.blueimp-gallery > .close,
+.blueimp-gallery > .title {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  margin: 0 40px 0 0;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  text-shadow: 0 0 2px #000;
+  opacity: 0.8;
+  display: none;
+}
+.blueimp-gallery > .close {
+  padding: 15px;
+  right: 15px;
+  left: auto;
+  margin: -15px;
+  font-size: 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.blueimp-gallery > .play-pause {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  width: 15px;
+  height: 15px;
+  background: url("play-pause.png") 0 0 no-repeat;
+  cursor: pointer;
+  opacity: 0.5;
+  display: none;
+}
+.blueimp-gallery-playing > .play-pause {
+  background-position: -15px 0;
+}
+.blueimp-gallery-controls > .prev,
+.blueimp-gallery-controls > .next,
+.blueimp-gallery-controls > .close,
+.blueimp-gallery-controls > .title,
+.blueimp-gallery-controls > .play-pause {
+  display: block;
+  /* Fix z-index issues (controls behind slide element) on Android: */
+  -webkit-transform: translateZ(0);
+     -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+       -o-transform: translateZ(0);
+          transform: translateZ(0);
+}
+.blueimp-gallery-single > .prev,
+.blueimp-gallery-left > .prev,
+.blueimp-gallery-single > .next,
+.blueimp-gallery-right > .next,
+.blueimp-gallery-single > .play-pause {
+  display: none;
+}
+.blueimp-gallery > .slides > .slide > .slide-content,
+.blueimp-gallery > .prev,
+.blueimp-gallery > .next,
+.blueimp-gallery > .close,
+.blueimp-gallery > .play-pause {
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* Replace PNGs with SVGs for capable browsers (excluding IE<9) */
+body:last-child .blueimp-gallery > .slides > .slide-error {
+  background-image: url("error.svg");
+}
+body:last-child .blueimp-gallery > .play-pause {
+  width: 20px;
+  height: 20px;
+  background-size: 40px 20px;
+  background-image: url("play-pause.svg");
+}
+body:last-child .blueimp-gallery-playing > .play-pause {
+  background-position: -20px 0;
+}
+
+/* IE7 fixes */
+*+html .blueimp-gallery > .slides > .slide {
+  min-height: 300px;
+}
+*+html .blueimp-gallery > .slides > .slide > .slide-content {
+  position: relative;
+}
+@charset 'UTF-8';
+/*
+ * blueimp Gallery Indicator CSS 1.0.1
+ * https://github.com/blueimp/Gallery
+ *
+ * Copyright 2013, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+
+.blueimp-gallery > .indicator {
+  position: absolute;
+  top: auto;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  margin: 0 40px;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 10px;
+  display: none;
+}
+.blueimp-gallery > .indicator > li {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin: 6px 3px 0 3px;
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+  border: 1px solid transparent;
+  background: #ccc;
+  background: rgba(255, 255, 255, 0.25) center no-repeat;
+  border-radius: 5px;
+  box-shadow: 0 0 2px #000;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.blueimp-gallery > .indicator > .active {
+  background-color: #fff;
+  border-color: #fff;
+  opacity: 0.8;
+}
+.blueimp-gallery-controls > .indicator {
+  display: block;
+  /* Fix z-index issues (controls behind slide element) on Android: */
+  -webkit-transform: translateZ(0);
+     -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+       -o-transform: translateZ(0);
+          transform: translateZ(0);
+}
+.blueimp-gallery-single > .indicator {
+  display: none;
+}
+.blueimp-gallery > .indicator {
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* IE7 fixes */
+*+html .blueimp-gallery > .indicator > li {
+  display: inline;
+}
+@charset 'UTF-8';
+/*
+ * blueimp Gallery Video Factory CSS 1.1.1
+ * https://github.com/blueimp/Gallery
+ *
+ * Copyright 2013, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+
+.blueimp-gallery > .slides > .slide > .video-content > video,
+.blueimp-gallery > .slides > .slide > .video-content > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 1;
+  /* Prevent artifacts in Mozilla Firefox: */
+  -moz-backface-visibility: hidden;
+}
+.blueimp-gallery > .slides > .slide > .video-content > iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.blueimp-gallery > .slides > .slide > .video-playing > iframe {
+  top: 0;
+}
+.blueimp-gallery > .slides > .slide > .video-content > a {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  margin: -64px auto 0;
+  width: 128px;
+  height: 128px;
+  background: url("video-play.png") center no-repeat;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.blueimp-gallery > .slides > .slide > .video-playing > a,
+.blueimp-gallery > .slides > .slide > .video-playing > img {
+  display: none;
+}
+.blueimp-gallery > .slides > .slide > .video-content > video {
+  display: none;
+}
+.blueimp-gallery > .slides > .slide > .video-playing > video {
+  display: block;
+}
+.blueimp-gallery > .slides > .slide > .video-loading > a {
+  background: url("loading.gif") center no-repeat;
+  background-size: 64px 64px;
+}
+
+/* Replace PNGs with SVGs for capable browsers (excluding IE<9) */
+body:last-child .blueimp-gallery > .slides > .slide > .video-content:not(.video-loading) > a {
+  background-image: url("video-play.svg");
+}
+
+/* IE7 fixes */
+*+html .blueimp-gallery > .slides > .slide > .video-content {
+  height: 100%;
+}
+*+html .blueimp-gallery > .slides > .slide > .video-content > a {
+  left: 50%;
+  margin-left: -64px;
+}
+/*
+
+
+
+*/

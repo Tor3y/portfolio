@@ -36,8 +36,9 @@ gem 'bcrypt', '~> 3.1.7'
 #gem 'paperclip'
 gem 'masonry-rails', '~> 0.2.1'
 # Use unicorn as the app server
+gem 'fancybox-rails', '~> 0.2.1'
+gem 'blueimp-gallery-rails', '~> 2.7.0'
 # gem 'unicorn'
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

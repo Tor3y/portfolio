@@ -1,12 +1,13 @@
 class PhotosController < ApplicationController
 
   def index
-      @photos = Photo.all
-      #@photo = Photo.where(is_active: true)
+    @photos = Photo.all
+    #@photo = Photo.where(is_active: true)
   end
 
   def new
     @photo = Photo.new
+    render 'new'
   end
 
   def create
@@ -28,8 +29,7 @@ class PhotosController < ApplicationController
   end
 
   def show
-      # @photos = Photo.where(:user_id => current_user.id)
-      # redirect_to photo_path(current_user)
+    render 'show'
   end
 
 
