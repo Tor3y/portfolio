@@ -11,8 +11,12 @@
 // about supported directives.
 
 //= require jquery
-//= require blueimp-gallery-all
 //= require bootstrap
 //= require jquery_ujs
+//= require blueimp-gallery
+//= require blueimp-gallery-fullscreen
+//= require blueimp-gallery-indicator
+//= require blueimp-gallery-video
+//= require jquery.blueimp-gallery
 //= require turbolinks
 //= require_tree .
