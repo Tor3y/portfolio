@@ -19,26 +19,20 @@
           <li>
           </li>  
            <% end %>
-
-        <% if current_user %>  
           <li class="navLinks">
             <%= link_to "Works", photos_path %>
           </li>
-          <li class="navLinks">
+
+        <% if current_user %> 
+         <li class="navLinks">
             <%= link_to "Backstage", photo_path(current_user) %>
           </li>
-          <li class="navLinks">
-            <%= link_to "contact", new_user_path %>
-          </li>
-          <li class="navLinks"><%= link_to "Log out", session_path, method: :delete %></li>
+        <li class="navLinks"><%= link_to "Log out", session_path, method: :delete %></li>
         <% else %>
-          <li class="navLinks">
-            <%= link_to "Works", photos_path %>
+           <li class="navLinks">
+            <%= link_to "Sign up", new_user_path %>
           </li>
-          <li class="navLinks">
-            <%= link_to "Contact", new_user_path %>
-          </li>
-            <li class="navLinks">
+           <li class="navLinks">
             <%= link_to "Log in", new_session_path, method: :get %>
           </li>
         <% end %>
