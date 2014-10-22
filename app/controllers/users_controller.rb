@@ -19,7 +19,7 @@ class UsersController < ApplicationController
      session[:user_id] = @user.id.to_s
       redirect_to photos_path(current_user)
     else
-      root_path
+      root path
     end
   end
 

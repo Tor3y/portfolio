@@ -153,10 +153,32 @@ input.checkme {
 	border: none;
 	width: 120px;
 }
+
 .btn-primary {
 	background-color: white;
 	color: white;
 	border: 1px solid #000;
+}
+
+.btn-user:hover {
+	background-color: white;
+	border: 1px solid black;
+	color: black;
+}
+
+.loginbtn {
+	background-color: black;
+	color: white;
+}
+
+.loginbtn:hover {
+	color: black;
+	background-color: white;
+	border: 1px solid black;
+}
+
+.btn-primary:hover {
+	color: black;
 }
 
 .myblue:hover {
